@@ -1,0 +1,22 @@
+[
+  {
+    "name": "postgresql",
+    "start": "postgres -D /usr/local/var/postgres",
+    "ps_search": "postgres"
+  },
+  {
+    "name": "redis",
+    "start": "redis-server /usr/local/etc/redis.conf",
+    "ps_search": "redis-server"
+  },
+  {
+    "name": "memcached",
+    "start": "/usr/local/opt/memcached/bin/memcached",
+    "ps_search": "memcached"
+  },
+  {
+    "name": "fake",
+    "start": "/dev/null",
+    "ps_search": "fake task"
+  }
+]
