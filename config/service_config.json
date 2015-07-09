@@ -18,5 +18,30 @@
     "name": "fake",
     "start": "/dev/null",
     "ps_search": "fake task"
+  },
+  {
+    "name": "sidekiq",
+    "start": "todo",
+    "ps_search": "sidekiq"
+  },
+  {
+    "name": "nginx",
+    "start": "todo",
+    "ps_search": "nginx"
+  },
+  {
+    "name": "mysql",
+    "start": "todo",
+    "ps_search": "mysql"
+  },
+  {
+    "name": "elasticsearch",
+    "start": "todo",
+    "ps_search": "elasticsearch"
+  },
+  {
+    "name": "rails",
+    "start": "todo",
+    "ps_search": "rails"
   }
 ]
