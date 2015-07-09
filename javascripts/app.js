@@ -66,17 +66,14 @@ $(function() {
       var $service_name_td = $('[data-service-container] [data-service-name="' + service.name + '"]');
       var $service_status_td = $service_name_td.parent('tr').find('[data-service-status]');
 
-      // hide spans
-      $('span.label-success, span.label-danger', $service_status_td).hide();
+      $('span.label-default', $service_status_td).hide();
 
       // show status span
       if (service.is_running) {
-        $('span.label-default', $service_status_td).hide();
-        $('span.label-success', $service_status_td).show();
+        $('span.label-success', $service_status_td).removeClass('hidden').show();
       }
       else {
-        $('span.label-default', $service_status_td).hide();
-        $('span.label-danger', $service_status_td).show();
+        $('span.label-danger', $service_status_td).removeClass('hidden').show();
       }
 
     })
